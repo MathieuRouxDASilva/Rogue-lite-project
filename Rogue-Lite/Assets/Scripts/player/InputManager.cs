@@ -14,6 +14,7 @@ public class InputManager : MonoBehaviour
     private float _horizontalInput = 0f;
     private float _moveSpeed = 50f;
 
+    //playerInput
     private void OnMoveVertical(InputValue value)
     {
         _verticalInput = value.Get<float>();
