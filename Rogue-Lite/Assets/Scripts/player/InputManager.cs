@@ -11,14 +11,9 @@ public class InputManager : MonoBehaviour
     [Header("Objects")] [SerializeField] private GameObject player;
     [SerializeField] private GameObject gun;
 
-    [SerializeField] private BulletBehavior bullet;
-
     //aim and position of mouse
     [Header("Aiming")] [SerializeField] private Vector2 mousePos;
-    [SerializeField] private Vector2 mouseWorldPos;
     [SerializeField] private new Camera camera;
-
-    [SerializeField] private Transform gunHole;
 
     //animator related stuff
     [Header("Animator related")] [SerializeField]
@@ -28,6 +23,10 @@ public class InputManager : MonoBehaviour
     private Vector2 _playerMoveInput;
     private const float MoveSpeed = 25f;
     private bool _isShooting = false;
+
+    //get is shooting
+    public bool IsShooting => _isShooting;
+
 
     //playerInput
     private void OnMove(InputValue value)
@@ -79,10 +78,7 @@ public class InputManager : MonoBehaviour
         if (_isShooting)
         {
             animator.SetBool("Shooting", true);
-
-            var placeHolder = Instantiate(bullet, gunHole);
             
-            placeHolder.transform.rotation = gunHole.transform.rotation;
             
         }
         else
