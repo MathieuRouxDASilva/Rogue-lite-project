@@ -4,7 +4,7 @@ Important things : this repo has 2 scenes, one that does the procedural generati
 
 
 - for the procedural generation go to ProceduralMap and lunch the scene, you will see the generation, then go on the room manager and click on the Destroy button, then just Init.
-if you want to see the generation piece by piece stop the scene click Init 1 time (otherwise it will not destroy everything) then click generate and here you go.
+if you want to see the generation piece by piece stop the scene click Init 1 time (otherwise it will not destroy everything) then click generate and here you go. Of course once finished just Destoy and do it again if you desire.
 
 - for the player scene go to PlayTestPlayer where you can manipulate this small player without sprite (it's still in testing mode) in a small room, move with WASD/ and left mouse click to shoot. The gun is automatically looking at the mouse indicator but bullets are bugged so if you want to see them just divide your screen in half one for the Game and the other one for the Scene, you'll see small black points moving.
 
