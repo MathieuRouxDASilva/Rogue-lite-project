@@ -57,7 +57,13 @@ public class InputManager : MonoBehaviour
     //move function
     private void Move()
     {
-        player.transform.position += (Vector3)_playerMoveInput * (MoveSpeed * Time.deltaTime);
+        player.transform.position += (Vector3)_playerMoveInput * (float)(MoveSpeed * 0.5 * Time.deltaTime);
+
+        if (_playerMoveInput.x < 0.5 || _playerMoveInput.y < 0.5)
+        {
+            player.transform.position += new Vector3(0, 0, 0);
+        }
+        
     }
 
     //function that aim gun at mouse pos

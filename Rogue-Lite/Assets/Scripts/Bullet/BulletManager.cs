@@ -9,7 +9,6 @@ public class BulletManager : MonoBehaviour
     private float _fireRateTimer;
     private float _timer;
     private InputManager _input;
-    public bool debug = false;
     [SerializeField] private GameObject bullet;
     [SerializeField] private Transform barrelPosition;
     [SerializeField] private float bulletVelocity;
@@ -37,11 +36,10 @@ public class BulletManager : MonoBehaviour
     {
         _fireRateTimer += Time.deltaTime;
 
-        // if (_fireRateTimer < fireRate)
-        // {
-        //     debug = true;
-        //     return false;
-        // }
+        if (_fireRateTimer < fireRate)
+        {
+            return false;
+        }
 
         if (ammo.currentAmmo == 0)
         {
@@ -63,9 +61,9 @@ public class BulletManager : MonoBehaviour
         ammo.currentAmmo--;
         for (int nbOfShoot = 0; nbOfShoot < bulletPerShot; nbOfShoot++)
         {
-            GameObject actualBullet = Instantiate(bullet, barrelPosition.position, barrelPosition.rotation);
+            GameObject actualBullet = Instantiate(bullet, barrelPosition.position, new Quaternion(barrelPosition.rotation.x, barrelPosition.rotation.y + 90f, barrelPosition.rotation.z, barrelPosition.rotation.w));
             Rigidbody2D rbe = actualBullet.GetComponent<Rigidbody2D>();
-            rbe.AddForce(barrelPosition.forward * bulletVelocity, ForceMode2D.Impulse);
+            rbe.AddForce(barrelPosition.forward * (bulletVelocity * 5), ForceMode2D.Impulse);
         }
     }
 }

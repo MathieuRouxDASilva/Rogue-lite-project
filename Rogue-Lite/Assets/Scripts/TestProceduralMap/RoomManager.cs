@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using Unity.Mathematics;
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -102,7 +103,7 @@ public class RoomManager : MonoBehaviour
             Debug.Log($"Generation complete {_roomCount} number of rooms created");
         }
     }
-    
+
     //check all senario when we want the system to stop
     private bool TryGenerateRoom(Vector2Int roomIndex)
     {
@@ -266,9 +267,12 @@ public class RoomManager : MonoBehaviour
     public void DestroyAllRooms()
     {
         foreach (var objects in _roomsObjects)
-        { 
+        {
             DestroyImmediate(objects.gameObject);
         }
+
         Console.Clear();
     }
+
+
 }
