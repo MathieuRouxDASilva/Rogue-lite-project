@@ -1,9 +1,5 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
-using UnityEngine.Serialization;
 
 public class InputManager : MonoBehaviour
 {
@@ -14,11 +10,7 @@ public class InputManager : MonoBehaviour
     //aim and position of mouse
     [Header("Aiming")] [SerializeField] private Vector2 mousePos;
     [SerializeField] private new Camera camera;
-
-    //animator related stuff
-    [Header("Animator related")] [SerializeField]
-    private Animator animator;
-
+    
     //private variable
     private Vector2 _playerMoveInput;
     private const float MoveSpeed = 25f;
@@ -51,7 +43,6 @@ public class InputManager : MonoBehaviour
     {
         Move();
         Aiming();
-        Shoot();
     }
 
     //move function
@@ -78,18 +69,5 @@ public class InputManager : MonoBehaviour
         float angle = Mathf.Atan2(mousePos.y, mousePos.x) * Mathf.Rad2Deg;
         player.transform.rotation = Quaternion.Euler(new Vector3(0, 0, angle));
     }
-
-    private void Shoot()
-    {
-        if (_isShooting)
-        {
-            animator.SetBool("Shooting", true);
-            
-            
-        }
-        else
-        {
-            animator.SetBool("Shooting", false);
-        }
-    }
+    
 }

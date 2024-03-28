@@ -5,15 +5,20 @@ using UnityEngine.Serialization;
 
 public class BulletManager : MonoBehaviour
 {
+    //SerializeField
     [SerializeField] private float fireRate;
-    private float _fireRateTimer;
-    private float _timer;
-    private InputManager _input;
     [SerializeField] private GameObject bullet;
     [SerializeField] private Transform barrelPosition;
     [SerializeField] private float bulletVelocity;
     [SerializeField] private int bulletPerShot;
     [SerializeField] private GameObject aimTarget;
+
+    //private
+    private float _fireRateTimer;
+    private float _timer;
+    private InputManager _input;
+
+    //public
     public BulletAmmoSystem ammo;
 
     // Start is called before the first frame update
@@ -61,7 +66,9 @@ public class BulletManager : MonoBehaviour
         ammo.currentAmmo--;
         for (int nbOfShoot = 0; nbOfShoot < bulletPerShot; nbOfShoot++)
         {
-            GameObject actualBullet = Instantiate(bullet, barrelPosition.position, new Quaternion(barrelPosition.rotation.x, barrelPosition.rotation.y + 90f, barrelPosition.rotation.z, barrelPosition.rotation.w));
+            GameObject actualBullet = Instantiate(bullet, barrelPosition.position,
+                new Quaternion(barrelPosition.rotation.x, barrelPosition.rotation.y + 90f, barrelPosition.rotation.z,
+                    barrelPosition.rotation.w));
             Rigidbody2D rbe = actualBullet.GetComponent<Rigidbody2D>();
             rbe.AddForce(barrelPosition.forward * (bulletVelocity * 5), ForceMode2D.Impulse);
         }

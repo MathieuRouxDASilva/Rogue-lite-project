@@ -5,6 +5,11 @@ TagManager:
   serializedVersion: 2
   tags:
   - Wall
+  - Ennemy
+  - player
+  - RegularBullet
+  - ChaserEnnemy
+  - ShooterEnnemy
   layers:
   - Default
   - TransparentFX
