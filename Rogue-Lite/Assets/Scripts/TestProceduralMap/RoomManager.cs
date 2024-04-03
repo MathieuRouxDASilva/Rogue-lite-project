@@ -17,7 +17,7 @@ public class RoomManager : MonoBehaviour
 
     //private int
     private int _roomWith = 20;
-    private int _roomHeight = 12;
+    private int _roomHeight = 18;
     private int[,] _roomGrid;
     private int _roomCount;
 
