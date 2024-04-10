@@ -1,8 +1,5 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Serialization;
+
 
 public class ShooterEnnemyBehavior : MonoBehaviour
 {
@@ -13,11 +10,15 @@ public class ShooterEnnemyBehavior : MonoBehaviour
     [SerializeField] private Transform barrelPosition;
     [SerializeField] private float ennemyBulletVelocity;
     [SerializeField] private int bulletPerShot;
+    [SerializeField] private Rigidbody2D rb;
+    [SerializeField] private SpriteRenderer sprite;
 
     //private
     private float _fireRateTimer;
     private float _timer;
-    private int _hp = 1;
+    private int _hp = 2;
+    private Vector2 _aimPosition;
+    private bool _rotated = false;
 
     private void Start()
     {
@@ -36,6 +37,9 @@ public class ShooterEnnemyBehavior : MonoBehaviour
         {
             Destroy(this.gameObject);
         }
+        
+        
+        Aiming();
     }
 
 
@@ -73,5 +77,19 @@ public class ShooterEnnemyBehavior : MonoBehaviour
             _hp--;
             Destroy(other.gameObject);
         }
+    }
+    
+    private void Aiming()
+    {
+        _aimPosition = player.transform.position - transform.position;
+        
+        if (!_rotated)
+        {
+            sprite.flipX = true;
+            _rotated = true;
+        }
+        
+        float angle = Mathf.Atan2(_aimPosition.y, _aimPosition.x) * Mathf.Rad2Deg;
+        rb.rotation = angle;
     }
 }

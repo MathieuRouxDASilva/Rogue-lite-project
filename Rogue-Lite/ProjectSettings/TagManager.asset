@@ -4,12 +4,27 @@
 TagManager:
   serializedVersion: 2
   tags:
+  - Enemy
+  - Weapon
+  - GunBody
+  - GunSight
+  - GunBarrel
+  - GunMuzzle
+  - GunClip
+  - GunProjectile
   - Wall
-  - Ennemy
+  - GunStock
+  - SmokeTrail
+  - Spawner
+  - GunFlash
   - player
   - RegularBullet
+  - spawn
   - ChaserEnnemy
   - ShooterEnnemy
+  - PatternEnnemy
+  - LaserEnnemy
+  - EnnemyBullet
   layers:
   - Default
   - TransparentFX
@@ -19,7 +34,7 @@ TagManager:
   - UI
   - 
   - 
-  - 
+  - Enemy
   - 
   - 
   - 

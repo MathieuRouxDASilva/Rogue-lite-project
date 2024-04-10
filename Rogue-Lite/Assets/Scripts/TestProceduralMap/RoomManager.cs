@@ -3,13 +3,21 @@ using System.Collections.Generic;
 using Unity.Mathematics;
 using UnityEditor.Experimental.GraphView;
 using UnityEngine;
+using UnityEngine.Serialization;
 using Random = UnityEngine.Random;
 
 
 public class RoomManager : MonoBehaviour
 {
     //serializefield variables
-    [SerializeField] private GameObject roomPrefab;
+    [Header("All rooms")]
+    [SerializeField] private GameObject roomFirstVersion;
+    [SerializeField] private GameObject roomSecoundVersion;
+    [SerializeField] private GameObject roomThirdVersion;
+    [SerializeField] private GameObject roomFourthVersion;
+    [SerializeField] private GameObject eliteRoom;
+    
+    [Header("grid data")]
     [SerializeField] private int maxRoomsCount = 30;
     [SerializeField] private int minRoomsCount = 10;
     [SerializeField] private int gridSizeX = 10;
@@ -46,7 +54,7 @@ public class RoomManager : MonoBehaviour
         _roomGrid[x, y] = 1; //set the room as a actual room (1) not nothing (0)
         _roomCount++;
         //instantiate room and all settings
-        var initialRoom = Instantiate(roomPrefab, GetPositionFromGridIndex(roomIndex), Quaternion.identity);
+        var initialRoom = Instantiate(roomFirstVersion, GetPositionFromGridIndex(roomIndex), Quaternion.identity);
         initialRoom.name = $"Room-{_roomCount}"; //$ + "{roomcount to use it}"
         initialRoom.GetComponent<Room>().roomIndex = roomIndex; //give it the right index
         _roomsObjects.Add(initialRoom);
@@ -127,14 +135,7 @@ public class RoomManager : MonoBehaviour
         _roomGrid[roomIndex.x, roomIndex.y] = 1;
         _roomCount++;
         //create it 
-        var newRoom = Instantiate(roomPrefab, GetPositionFromGridIndex(roomIndex), quaternion.identity);
-        newRoom.GetComponent<Room>().roomIndex = roomIndex;
-        newRoom.name = $"Room-{_roomCount}";
-        _roomsObjects.Add(newRoom);
-
-        //activate doors if needed
-        OpenDoors(newRoom, roomIndex.x, roomIndex.y);
-
+        SelectARandomRoomAndInstatiate(roomIndex);
 
         return true;
     }
@@ -236,8 +237,7 @@ public class RoomManager : MonoBehaviour
 
         return count;
     }
-
-
+    
     //create position out of grid 
     private Vector3 GetPositionFromGridIndex(Vector2Int gridIndex)
     {
@@ -274,5 +274,42 @@ public class RoomManager : MonoBehaviour
         Console.Clear();
     }
 
+    //create a room on a random basis
+    private void SelectARandomRoomAndInstatiate(Vector2Int roomIndex)
+    {
+        var numberOfTheRoom = Random.Range(0, 4);
+        
+        switch (numberOfTheRoom)
+        {
+            case 0:
+                var newRoom = Instantiate(roomFirstVersion, GetPositionFromGridIndex(roomIndex), quaternion.identity);
+                newRoom.GetComponent<Room>().roomIndex = roomIndex;
+                newRoom.name = $"Room-{_roomCount}";
+                _roomsObjects.Add(newRoom);
+                OpenDoors(newRoom, roomIndex.x, roomIndex.y);
+                break;
+            case 1:
+                var newRoomSecound = Instantiate(roomSecoundVersion, GetPositionFromGridIndex(roomIndex), quaternion.identity);
+                newRoomSecound.GetComponent<Room>().roomIndex = roomIndex;
+                newRoomSecound.name = $"Room-{_roomCount}";
+                _roomsObjects.Add(newRoomSecound);
+                OpenDoors(newRoomSecound, roomIndex.x, roomIndex.y);
+                break;
+            case 2:
+                var newRoomThird = Instantiate(roomThirdVersion, GetPositionFromGridIndex(roomIndex), quaternion.identity);
+                newRoomThird.GetComponent<Room>().roomIndex = roomIndex;
+                newRoomThird.name = $"Room-{_roomCount}";
+                _roomsObjects.Add(newRoomThird);
+                OpenDoors(newRoomThird, roomIndex.x, roomIndex.y);
+                break;
+            case 3:
+                var newRoomFourth = Instantiate(roomFourthVersion, GetPositionFromGridIndex(roomIndex), quaternion.identity);
+                newRoomFourth.GetComponent<Room>().roomIndex = roomIndex;
+                newRoomFourth.name = $"Room-{_roomCount}";
+                _roomsObjects.Add(newRoomFourth);
+                OpenDoors(newRoomFourth, roomIndex.x, roomIndex.y);
+                break;
+        }
 
+    }
 }

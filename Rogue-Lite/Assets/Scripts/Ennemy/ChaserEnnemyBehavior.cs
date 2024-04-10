@@ -7,8 +7,10 @@ public class ChaserEnnemyBehavior : MonoBehaviour
     [SerializeField] private GameObject player;
     [SerializeField] private float speed = 0.5f;
     [SerializeField] private Detector detector;
+    [SerializeField] private Sprite awaken;
+    [SerializeField] private SpriteRenderer spriteRenderer;
     
-    //public 
+    //private
     private int _hp = 3;
 
 
@@ -29,6 +31,8 @@ public class ChaserEnnemyBehavior : MonoBehaviour
         {
             Destroy(this.gameObject);
         }
+        
+        ChangeSprite();
     }
 
     private void FollowPlayer()
@@ -47,4 +51,14 @@ public class ChaserEnnemyBehavior : MonoBehaviour
             Destroy(other.gameObject);
         }
     }
+
+
+    private void ChangeSprite()
+    {
+        if (detector.isSeeing)
+        {
+            spriteRenderer.sprite = awaken;
+        }
+    }
+    
 }

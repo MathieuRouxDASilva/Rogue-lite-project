@@ -67,7 +67,7 @@ public class BulletManager : MonoBehaviour
         for (int nbOfShoot = 0; nbOfShoot < bulletPerShot; nbOfShoot++)
         {
             GameObject actualBullet = Instantiate(bullet, barrelPosition.position,
-                new Quaternion(barrelPosition.rotation.x, barrelPosition.rotation.y + 90f, barrelPosition.rotation.z,
+                new Quaternion(barrelPosition.rotation.x, barrelPosition.rotation.y -180, barrelPosition.rotation.z,
                     barrelPosition.rotation.w));
             Rigidbody2D rbe = actualBullet.GetComponent<Rigidbody2D>();
             rbe.AddForce(barrelPosition.forward * (bulletVelocity * 5), ForceMode2D.Impulse);

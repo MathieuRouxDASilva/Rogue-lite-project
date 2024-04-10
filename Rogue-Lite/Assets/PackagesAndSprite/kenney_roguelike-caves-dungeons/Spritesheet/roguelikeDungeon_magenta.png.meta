@@ -130,7 +130,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      roguelikeDungeon_magenta_0: -5346050411005720487
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
