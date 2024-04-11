@@ -19,5 +19,18 @@ public class EnnemyBulletInteraction : MonoBehaviour
         {
             Destroy(this.gameObject);
         }
+        if (other.gameObject.CompareTag("LaserEnnemy"))
+        {
+            Destroy(this.gameObject);
+        }
+        if (other.gameObject.CompareTag("PatternEnnemy"))
+        {
+            Destroy(this.gameObject);
+        }
+        if (other.gameObject.CompareTag("EnnemyBullet"))
+        {
+            Destroy(other.gameObject);
+            Destroy(this.gameObject);
+        }
     }
 }

@@ -1,9 +1,7 @@
 using System;
 using System.Collections.Generic;
 using Unity.Mathematics;
-using UnityEditor.Experimental.GraphView;
 using UnityEngine;
-using UnityEngine.Serialization;
 using Random = UnityEngine.Random;
 
 
@@ -16,10 +14,12 @@ public class RoomManager : MonoBehaviour
     [SerializeField] private GameObject roomThirdVersion;
     [SerializeField] private GameObject roomFourthVersion;
     [SerializeField] private GameObject eliteRoom;
+    [SerializeField] private GameObject spawnRoom;
+    [SerializeField] private GameObject lootRoom;
     
     [Header("grid data")]
     [SerializeField] private int maxRoomsCount = 30;
-    [SerializeField] private int minRoomsCount = 10;
+    [SerializeField] private int minRoomsCount = 20;
     [SerializeField] private int gridSizeX = 10;
     [SerializeField] private int gridSizeY = 10;
 
@@ -54,7 +54,7 @@ public class RoomManager : MonoBehaviour
         _roomGrid[x, y] = 1; //set the room as a actual room (1) not nothing (0)
         _roomCount++;
         //instantiate room and all settings
-        var initialRoom = Instantiate(roomFirstVersion, GetPositionFromGridIndex(roomIndex), Quaternion.identity);
+        var initialRoom = Instantiate(spawnRoom, GetPositionFromGridIndex(roomIndex), Quaternion.identity);
         initialRoom.name = $"Room-{_roomCount}"; //$ + "{roomcount to use it}"
         initialRoom.GetComponent<Room>().roomIndex = roomIndex; //give it the right index
         _roomsObjects.Add(initialRoom);
@@ -126,6 +126,11 @@ public class RoomManager : MonoBehaviour
         }
 
         if (CountAdjacentRooms(roomIndex) > 1)
+        {
+            return false;
+        }
+
+        if (_roomGrid[roomIndex.x, roomIndex.y] != 0)
         {
             return false;
         }

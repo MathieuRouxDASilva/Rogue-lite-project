@@ -9,6 +9,8 @@ public class ChaserEnnemyBehavior : MonoBehaviour
     [SerializeField] private Detector detector;
     [SerializeField] private Sprite awaken;
     [SerializeField] private SpriteRenderer spriteRenderer;
+    [SerializeField] private LootManager loot; 
+    
     
     //private
     private int _hp = 3;
@@ -29,6 +31,10 @@ public class ChaserEnnemyBehavior : MonoBehaviour
 
         if (_hp <= 0)
         {
+            if (loot != null)
+            {
+                loot.GenerateLoot(transform.position, transform.rotation);
+            }
             Destroy(this.gameObject);
         }
         

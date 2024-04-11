@@ -8,7 +8,7 @@ public class PatternEnnemyBehavior : MonoBehaviour
 {
     //serializefield
     [SerializeField] private float speed = 0.2f;
-    //[SerializeField] private PlayerData player;
+    [SerializeField] private LootManager loot; 
     
     //private
     private int _listIndex = 0;
@@ -85,6 +85,10 @@ public class PatternEnnemyBehavior : MonoBehaviour
     {
         if (other.gameObject.CompareTag("RegularBullet"))
         {
+            if (loot != null)
+            {
+                loot.GenerateLoot(transform.position, transform.rotation);
+            }
             Destroy(this.gameObject);
             Destroy(other.gameObject);
         }

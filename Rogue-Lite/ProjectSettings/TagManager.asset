@@ -25,6 +25,8 @@ TagManager:
   - PatternEnnemy
   - LaserEnnemy
   - EnnemyBullet
+  - EnnemyGroups
+  - Coin
   layers:
   - Default
   - TransparentFX

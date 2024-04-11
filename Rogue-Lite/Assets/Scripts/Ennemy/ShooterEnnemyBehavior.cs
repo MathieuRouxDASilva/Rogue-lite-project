@@ -12,6 +12,7 @@ public class ShooterEnnemyBehavior : MonoBehaviour
     [SerializeField] private int bulletPerShot;
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private SpriteRenderer sprite;
+    [SerializeField] private LootManager loot; 
 
     //private
     private float _fireRateTimer;
@@ -35,6 +36,10 @@ public class ShooterEnnemyBehavior : MonoBehaviour
 
         if (_hp <= 0)
         {
+            if (loot != null)
+            {
+                loot.GenerateLoot(transform.position, transform.rotation);
+            }
             Destroy(this.gameObject);
         }
         

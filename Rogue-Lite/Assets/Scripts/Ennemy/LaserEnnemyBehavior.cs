@@ -11,7 +11,8 @@ public class LaserEnnemyBehavior : MonoBehaviour
     [SerializeField] private SpriteRenderer spriteRenderer;
     [SerializeField] private Sprite angry;
     [SerializeField] private Sprite calm;
-
+    [SerializeField] private LootManager loot; 
+    
     //private 
     private float _timer = 0f;
     private float _shootTimer = 0f;
@@ -88,6 +89,10 @@ public class LaserEnnemyBehavior : MonoBehaviour
     {
         if (_hp <= 0)
         {
+            if (loot != null)
+            {
+                loot.GenerateLoot(transform.position, transform.rotation);
+            }
             Destroy(this. gameObject);
         }
     }
