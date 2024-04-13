@@ -1,0 +1,1547 @@
+fileFormatVersion: 2
+guid: ed427138b98fc224d8b00337de176bfe
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6867978609876963078
+    second: Lego_Coin_spining _0
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Lego_Coin_spining _0
+      rect:
+        serializedVersion: 2
+        x: 1088
+        y: 0
+        width: 3
+        height: 680
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af07d49a7d900b0a0800000000000000
+      internalID: -6867978609876963078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lego1
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 449
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 327b0ca828333d24f91998214a7f16ec
+      internalID: -1776769246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lego2
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 449
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0956d3a0143263b49a6d5cdc683124dd
+      internalID: -1493575966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lego3
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 449
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51b7feef9a614f74a93ab43894be7ba0
+      internalID: -2018966253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lego4
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 449
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1432b7d1c453b9b4b9e03b99c4c5b01b
+      internalID: -552995630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lego5
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 449
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80dc7b9ba90650f46a04c1aeae5f960d
+      internalID: 1225351190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lego6
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 449
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac9522c08f661024fa373961d555eaa1
+      internalID: -1330802460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lego7
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 449
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46a405f8e48e154488bb817bd5e6dc46
+      internalID: 985525519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lego8
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 449
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c27de2e1da96c3f4db61aba185fb9196
+      internalID: 785683384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lego9
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 449
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb79172d0baedbf4eacb4fe775dfa0d7
+      internalID: 1027241118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lego10
+      rect:
+        serializedVersion: 2
+        x: 615
+        y: 449
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69704edd4dcefe1438ee584ca5db0d14
+      internalID: 1757339287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lego11
+      rect:
+        serializedVersion: 2
+        x: 683
+        y: 449
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f92a94cd3a6e1844b2eaf6370401432
+      internalID: -320958028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lego12
+      rect:
+        serializedVersion: 2
+        x: 751
+        y: 449
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 795d189532e2af641ba84f6b8c113320
+      internalID: -590747059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lego13
+      rect:
+        serializedVersion: 2
+        x: 819
+        y: 449
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67f025d28f4f20c419d1db8f6ea70f34
+      internalID: -1339537867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lego14
+      rect:
+        serializedVersion: 2
+        x: 887
+        y: 449
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed6a7392b4f536e478c7d9fa397e1d30
+      internalID: 626100549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lego15
+      rect:
+        serializedVersion: 2
+        x: 955
+        y: 449
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bef3a892dfd683438cb91239f736a35
+      internalID: -1452779020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lego16
+      rect:
+        serializedVersion: 2
+        x: 1023
+        y: 449
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e7732d0cf06712429caf0bbae596292
+      internalID: 1537898309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lego17
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 382
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0aeadca496892e14abc138d421de3958
+      internalID: 717945297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lego18
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 382
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef97a585804e640468b84eced904e58b
+      internalID: -428279859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lego19
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 382
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bea87c75647f31f40ba83a1da815decf
+      internalID: -1915240725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lego20
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 382
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ec4aee5254c3d145becf14c706afaae
+      internalID: 2131713212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lego21
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 382
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0367531750119f4abeec31cb7fc129c
+      internalID: 417458909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lego22
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 382
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34757e1e34b623149836d038ac735b9d
+      internalID: 1543528819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lego23
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 382
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bcaee8cabae4d24db85519ebb6bd385
+      internalID: 1591229262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lego24
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 382
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ad8dcdf77a108943b9a8e13ee85d32e
+      internalID: 575811324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lego25
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 382
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa3986737f63e7649a9a8898411dff56
+      internalID: 1500954845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lego26
+      rect:
+        serializedVersion: 2
+        x: 615
+        y: 382
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f3aeca87e2da0848ae8b3570db183f4
+      internalID: -239310310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lego27
+      rect:
+        serializedVersion: 2
+        x: 683
+        y: 382
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8a75a3ef0381ba41999cb3c43942935
+      internalID: -94372247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lego28
+      rect:
+        serializedVersion: 2
+        x: 751
+        y: 382
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae50bd2b48249d74ab77c91a29955637
+      internalID: -1825161194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lego29
+      rect:
+        serializedVersion: 2
+        x: 819
+        y: 382
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 266c5fafeb3a7fe4c81eb52e684125be
+      internalID: 1664600606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lego30
+      rect:
+        serializedVersion: 2
+        x: 887
+        y: 382
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3b6e0d5e8a9bd2429e3f05592ed8051
+      internalID: -910964357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lego31
+      rect:
+        serializedVersion: 2
+        x: 955
+        y: 382
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bf42ddc19c230f47936f0da1368a78d
+      internalID: 1255932912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lego32
+      rect:
+        serializedVersion: 2
+        x: 1023
+        y: 382
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae8958e6d841c884989860cc6faf6ebb
+      internalID: -2018511788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LegoSilver1
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 598
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7eda30c8a5aac074da0ab3936b6bdf6c
+      internalID: -1637711242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LegoSilver2
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 598
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0687b89794cf5be419789f1fa47f21c1
+      internalID: 683892478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LegoSilver3
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 598
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bded94742c0f6744a108593a370f193
+      internalID: 981470170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LegoSilver4
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 598
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a238181b3ac1fb747bfd8c07a03166d7
+      internalID: 952657016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LegoSilver5
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 598
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5928feb7f5cf04645aa0828a207b5918
+      internalID: 381757621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LegoSilver6
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 598
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7a52340a08fcf64d8036b73a5615d0b
+      internalID: 1663744040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LegoSilver7
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 598
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c527c56be1d31541834827cbe23e06f
+      internalID: -252462356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LegoSilver8
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 598
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5eff4879b5736104d86acd91115e77a6
+      internalID: 62464290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LegoSilver9
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 598
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57b166074ae0c534f8436d4a9eb785c5
+      internalID: -1479468113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LegoSilver10
+      rect:
+        serializedVersion: 2
+        x: 615
+        y: 598
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77917a1892e0f1f4287a41d8f302c3f2
+      internalID: 331951719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LegoSilver11
+      rect:
+        serializedVersion: 2
+        x: 683
+        y: 598
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04312b7626a2b6a42b85661194e43790
+      internalID: 1617450529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LegoSilver12
+      rect:
+        serializedVersion: 2
+        x: 751
+        y: 598
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d197d5ec80370845b9711826c1b8812
+      internalID: 726490459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LegoSilver13
+      rect:
+        serializedVersion: 2
+        x: 819
+        y: 598
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 490a5b33efdb2934683a33f35e74b794
+      internalID: 1189548737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LegoSilver14
+      rect:
+        serializedVersion: 2
+        x: 887
+        y: 598
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8a4702619320a84c92ba30a535acfd8
+      internalID: 1484814084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LegoSilver15
+      rect:
+        serializedVersion: 2
+        x: 955
+        y: 598
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c60990ca8ac7df4fa8d1b01171e21cd
+      internalID: 2045739384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LegoSilver16
+      rect:
+        serializedVersion: 2
+        x: 1023
+        y: 598
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ef419ec1648e8c498f6d55aef6060bc
+      internalID: -1275345077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LegoSilver17
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 531
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abf3901dd5d2e7c45a3383db5c48e4fb
+      internalID: -1226383029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LegoSilver18
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 531
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9e5167c476313c4190a5a613591a629
+      internalID: 966080241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LegoSilver19
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 531
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70a590ebd8793354dbfc54fcb92c1d2f
+      internalID: -1681474148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LegoSilver20
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 531
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4bb82005bb291f4987ad35ebd73c39e
+      internalID: -711553161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LegoSilver21
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 531
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d44b3800506a65846814aa70fdb6e52b
+      internalID: -1938654355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LegoSilver22
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 531
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba544d69dec785e47a6aacaa8f027b4c
+      internalID: -139657951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LegoSilver23
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 531
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3955c68bb6efda045a96269840a9ac61
+      internalID: -867034831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LegoSilver24
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 531
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a737a3080185bbe469f7e05336840f69
+      internalID: 1141256031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LegoSilver25
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 531
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 312943eb202ee3a409494600dd908586
+      internalID: -934068432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LegoSilver26
+      rect:
+        serializedVersion: 2
+        x: 615
+        y: 531
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: daff9ffa97c041e40821fadf44542a49
+      internalID: 1535200884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LegoSilver27
+      rect:
+        serializedVersion: 2
+        x: 683
+        y: 531
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3540132dafc5c14a9a01b0abbbf5430
+      internalID: 339861546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LegoSilver28
+      rect:
+        serializedVersion: 2
+        x: 751
+        y: 531
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d2f04043e8732d45b2828bdd46cc4ff
+      internalID: -159749427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LegoSilver29
+      rect:
+        serializedVersion: 2
+        x: 819
+        y: 531
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 742aee9f66052ca47b2b4282c49f5c50
+      internalID: -1919098662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LegoSilver30
+      rect:
+        serializedVersion: 2
+        x: 887
+        y: 531
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0b5c0b1771e1a749833cfa3e042d21f
+      internalID: -2015407917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LegoSilver31
+      rect:
+        serializedVersion: 2
+        x: 955
+        y: 531
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1efa46b148554a84d8a08bcd46850911
+      internalID: -1979455972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LegoSilver32
+      rect:
+        serializedVersion: 2
+        x: 1023
+        y: 531
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 851ecbd63ff2ad84f9cbd0e60056b7f1
+      internalID: 173739216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 4a6869116ec49f7419aff62aaab89dcc
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Lego1: -1776769246
+      Lego10: 1757339287
+      Lego11: -320958028
+      Lego12: -590747059
+      Lego13: -1339537867
+      Lego14: 626100549
+      Lego15: -1452779020
+      Lego16: 1537898309
+      Lego17: 717945297
+      Lego18: -428279859
+      Lego19: -1915240725
+      Lego2: -1493575966
+      Lego20: 2131713212
+      Lego21: 417458909
+      Lego22: 1543528819
+      Lego23: 1591229262
+      Lego24: 575811324
+      Lego25: 1500954845
+      Lego26: -239310310
+      Lego27: -94372247
+      Lego28: -1825161194
+      Lego29: 1664600606
+      Lego3: -2018966253
+      Lego30: -910964357
+      Lego31: 1255932912
+      Lego32: -2018511788
+      Lego4: -552995630
+      Lego5: 1225351190
+      Lego6: -1330802460
+      Lego7: 985525519
+      Lego8: 785683384
+      Lego9: 1027241118
+      LegoSilver1: -1637711242
+      LegoSilver10: 331951719
+      LegoSilver11: 1617450529
+      LegoSilver12: 726490459
+      LegoSilver13: 1189548737
+      LegoSilver14: 1484814084
+      LegoSilver15: 2045739384
+      LegoSilver16: -1275345077
+      LegoSilver17: -1226383029
+      LegoSilver18: 966080241
+      LegoSilver19: -1681474148
+      LegoSilver2: 683892478
+      LegoSilver20: -711553161
+      LegoSilver21: -1938654355
+      LegoSilver22: -139657951
+      LegoSilver23: -867034831
+      LegoSilver24: 1141256031
+      LegoSilver25: -934068432
+      LegoSilver26: 1535200884
+      LegoSilver27: 339861546
+      LegoSilver28: -159749427
+      LegoSilver29: -1919098662
+      LegoSilver3: 981470170
+      LegoSilver30: -2015407917
+      LegoSilver31: -1979455972
+      LegoSilver32: 173739216
+      LegoSilver4: 952657016
+      LegoSilver5: 381757621
+      LegoSilver6: 1663744040
+      LegoSilver7: -252462356
+      LegoSilver8: 62464290
+      LegoSilver9: -1479468113
+      Lego_Coin_spining _0: -6867978609876963078
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

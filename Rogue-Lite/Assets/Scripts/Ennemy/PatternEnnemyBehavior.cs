@@ -87,7 +87,7 @@ public class PatternEnnemyBehavior : MonoBehaviour
         {
             if (loot != null)
             {
-                loot.GenerateLoot(transform.position, transform.rotation);
+                loot.GenerateLoot(transform.position);
             }
             Destroy(this.gameObject);
             Destroy(other.gameObject);

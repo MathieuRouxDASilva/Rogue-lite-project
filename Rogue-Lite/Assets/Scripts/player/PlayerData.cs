@@ -6,20 +6,21 @@ using UnityEngine.UI;
 public class PlayerData : MonoBehaviour
 {
     //private
-    private int _hp = 10;
+    private int _hp;
     private bool _canNotBeHit = false;
     private float _invicibilityTimer = 0;
     private int _nbOfCoin = 0;
+    private int _maxHp = 10;
 
     //public
     public Text text;
-    public int currentCoin = 0;
 
+    //start
     private void Start()
     {
         text.text = "" + _nbOfCoin.ToString();
+        _hp = _maxHp;
     }
-
 
     //update
     private void Update()
@@ -111,6 +112,20 @@ public class PlayerData : MonoBehaviour
             IncreaseCoinNumber(1);
             Destroy(other.gameObject);
         }
+        else if (other.gameObject.CompareTag("CoinValueOf5"))
+        {
+            IncreaseCoinNumber(5);
+            Destroy(other.gameObject);
+        }
+        else if (other.gameObject.CompareTag("Hp"))
+        {
+            if (_hp < _maxHp)
+            {
+                IncreaseHpNumber(1);
+                Destroy(other.gameObject);
+            }
+            
+        }
     }
 
     public void OnTriggerStay2D(Collider2D other)
@@ -173,5 +188,10 @@ public class PlayerData : MonoBehaviour
     {
         _nbOfCoin += number;
         text.text = "" + _nbOfCoin.ToString();
+    }
+
+    private void IncreaseHpNumber(int number)
+    {
+        _hp += number;
     }
 }

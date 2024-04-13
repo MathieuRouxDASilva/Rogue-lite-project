@@ -1468,6 +1468,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5166516949344279336, guid: ad45449bb6ecbc8419093106ce36b3ad,
         type: 3}
+      propertyPath: hp
+      value: 
+      objectReference: {fileID: 6978204409810033729, guid: 378519ab35ef45942b8876bd15fec0ed,
+        type: 3}
+    - target: {fileID: 5166516949344279336, guid: ad45449bb6ecbc8419093106ce36b3ad,
+        type: 3}
+      propertyPath: coin
+      value: 
+      objectReference: {fileID: 6978204409810033729, guid: ee5eb851f661d5b4695f998e228c7c9e,
+        type: 3}
+    - target: {fileID: 5166516949344279336, guid: ad45449bb6ecbc8419093106ce36b3ad,
+        type: 3}
+      propertyPath: coinOf5
+      value: 
+      objectReference: {fileID: 6978204409810033729, guid: 95836c7711bad2a4180a326b3b779e6e,
+        type: 3}
+    - target: {fileID: 5166516949344279336, guid: ad45449bb6ecbc8419093106ce36b3ad,
+        type: 3}
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
