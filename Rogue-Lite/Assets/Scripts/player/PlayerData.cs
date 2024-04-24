@@ -1,5 +1,6 @@
 using System;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -14,6 +15,8 @@ public class PlayerData : MonoBehaviour
 
     //public
     public Text text;
+    public Image healthBar;
+    public bool gotUpgraded = false;
 
     //start
     private void Start()
@@ -124,7 +127,22 @@ public class PlayerData : MonoBehaviour
                 IncreaseHpNumber(1);
                 Destroy(other.gameObject);
             }
-            
+        }
+        else if (other.gameObject.CompareTag("BulletUpgrade"))
+        {
+            if (_nbOfCoin >= 50)
+            {
+                gotUpgraded = true;
+                Destroy(other.gameObject);
+            }
+        }
+        else if (other.gameObject.CompareTag("HpShop"))
+        {
+            if (_nbOfCoin >= 10)
+            {
+                IncreaseHpNumber(1);
+                Destroy(other.gameObject);
+            }
         }
     }
 
@@ -156,6 +174,10 @@ public class PlayerData : MonoBehaviour
     //what happen if dead
     private void HpManager()
     {
+        healthBar.fillAmount = _hp / 10f;
+        
+        
+        
         if (_hp <= 0)
         {
             Time.timeScale = 0;
