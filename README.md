@@ -1,14 +1,10 @@
 # Rogue-lite-project
 
-Important things : this repo has 2 scenes, one that does the procedural generation and the other one is the player
+So 2 scenes : 
+- one for the game itself
+- one for the playtest
 
-**Procedural Generation :**
-- for the procedural generation go to ProceduralMap and lunch the scene, you will see the generation, then go on the room manager and click on the Destroy button, then just Init.
-if you want to see the generation piece by piece stop the scene click Init 1 time (otherwise it will not destroy everything) then click generate and here you go. Of course once finished just Destoy and do it again if you desire.
 
-**PlayerTest :**
-- for the player scene go to PlayTestPlayer where you can manipulate this small player without sprite (it's still in testing mode) in a small room, move with WASD/ and left mouse click to shoot. The gun is automatically looking at the mouse indicator but bullets are bugged so if you want to see them just divide your screen in half one for the Game and the other one for the Scene, you'll see small black points moving.
+first one : Scenes/ProceduralMap -> this is the game just lunch and play (WASD to move and left click to shoot, try to collect as many coins as possible AND don't mind the weird thing that appear sometime after killing an ennemy it's a place holder).
 
-**My opinion on the generation :**
-
-Conserning the genration i thing this is what i want from the start, i just need to find a way to put the player in there and to make things look better (like adding sprites and stuff). I also am able to know wich room is the first one because it is generated differantly than the rest (wich is why you need a init button) and i can change my script to be able to know wich one is the last to place the camera in the right room and give the info about the last room (would be a boss) or just to know if the player has done all rooms. All rooms have something that is called an "index" in my script so i can pretty much identify all rooms for the camera, this still needs to be tested but it is looking really good!
+second one : Scene/TrainingRoomWithEnnemies -> go in this scene, lunch and move (WASD and left click) if you want to spawn some ennemies go in the scene onglet and click on the room prefab, you should see some button in the editor that pops some ennemies (they appear on the right side of this room).
