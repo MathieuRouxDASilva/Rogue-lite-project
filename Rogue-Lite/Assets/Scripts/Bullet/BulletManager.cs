@@ -7,11 +7,12 @@ public class BulletManager : MonoBehaviour
 {
     //SerializeField
     [SerializeField] private float fireRate;
-    [SerializeField] private GameObject bullet;
-    [SerializeField] private Transform barrelPosition;
     [SerializeField] private float bulletVelocity;
     [SerializeField] private int bulletPerShot;
+    [SerializeField] private Transform barrelPosition;
+    [SerializeField] private GameObject bullet;
     [SerializeField] private GameObject aimTarget;
+    [SerializeField] private PlayerData playerData;
 
     //private
     private float _fireRateTimer;
@@ -66,11 +67,23 @@ public class BulletManager : MonoBehaviour
         ammo.currentAmmo--;
         for (int nbOfShoot = 0; nbOfShoot < bulletPerShot; nbOfShoot++)
         {
-            GameObject actualBullet = Instantiate(bullet, barrelPosition.position,
-                new Quaternion(barrelPosition.rotation.x, barrelPosition.rotation.y -180, barrelPosition.rotation.z,
-                    barrelPosition.rotation.w));
-            Rigidbody2D rbe = actualBullet.GetComponent<Rigidbody2D>();
-            rbe.AddForce(barrelPosition.forward * (bulletVelocity * 5), ForceMode2D.Impulse);
+            if (playerData.gotUpgraded)
+            {
+                GameObject actualUpgradeBullet = Instantiate(bullet, barrelPosition.position,
+                    new Quaternion(barrelPosition.rotation.x, barrelPosition.rotation.y -180, barrelPosition.rotation.z,
+                        barrelPosition.rotation.w));
+                actualUpgradeBullet.transform.localScale *= 2;
+                Rigidbody2D rb = actualUpgradeBullet.GetComponent<Rigidbody2D>();
+                rb.AddForce(barrelPosition.forward * (bulletVelocity * 5), ForceMode2D.Impulse);
+            }
+            else
+            {
+                GameObject actualBullet = Instantiate(bullet, barrelPosition.position,
+                                new Quaternion(barrelPosition.rotation.x, barrelPosition.rotation.y -180, barrelPosition.rotation.z,
+                                    barrelPosition.rotation.w));
+                Rigidbody2D rbe = actualBullet.GetComponent<Rigidbody2D>();
+                rbe.AddForce(barrelPosition.forward * (bulletVelocity * 5), ForceMode2D.Impulse);
+            }
         }
     }
 }

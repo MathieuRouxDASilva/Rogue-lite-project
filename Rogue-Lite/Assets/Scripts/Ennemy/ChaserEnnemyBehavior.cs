@@ -3,13 +3,19 @@ using UnityEngine;
 
 public class ChaserEnnemyBehavior : MonoBehaviour
 {
+    //private
+    private float _timer;
+    private bool _isHit;
+    
     //SerializeField
-    [SerializeField] private GameObject player;
     [SerializeField] private float speed = 0.5f;
+    [SerializeField] private GameObject player;
     [SerializeField] private Detector detector;
-    [SerializeField] private Sprite awaken;
-    [SerializeField] private SpriteRenderer spriteRenderer;
     [SerializeField] private LootManager loot; 
+    [SerializeField] private SpriteRenderer spriteRenderer;
+    [SerializeField] private Sprite awaken;
+    [SerializeField] private Sprite asleep;
+    [SerializeField] private Sprite hitSprite;
     
     
     //private
@@ -54,6 +60,7 @@ public class ChaserEnnemyBehavior : MonoBehaviour
         if (other.gameObject.CompareTag("RegularBullet"))
         {
             _hp--;
+            _isHit = true;
             Destroy(other.gameObject);
         }
     }
@@ -64,6 +71,19 @@ public class ChaserEnnemyBehavior : MonoBehaviour
         if (detector.isSeeing)
         {
             spriteRenderer.sprite = awaken;
+        }
+
+        if (_isHit)
+        {
+            spriteRenderer.sprite = hitSprite;
+            _timer += Time.deltaTime;
+        }
+
+        if (_timer >= 0.2f)
+        {
+            spriteRenderer.sprite = asleep;
+            _timer = 0;
+            _isHit = false;
         }
     }
     

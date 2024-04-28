@@ -175,14 +175,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 523a971f6f7718a41b186bf7b9b3c766, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
   fireRate: 0.55
-  bullet: {fileID: 5986423503351578273, guid: 2d819719aab0fc24ba883a70555f87a1, type: 3}
-  barrelPosition: {fileID: 9052946371446163442}
   ennemyBulletVelocity: 3
   bulletPerShot: 1
+  player: {fileID: 0}
+  bullet: {fileID: 5986423503351578273, guid: 2d819719aab0fc24ba883a70555f87a1, type: 3}
+  barrelPosition: {fileID: 9052946371446163442}
   rb: {fileID: 3822453758483448367}
-  sprite: {fileID: 7692195675105107753}
+  loot: {fileID: 0}
+  spritendereRenderer: {fileID: 7692195675105107753}
+  hit: {fileID: 21300000, guid: 695ade91a347c074f8e1e94e8b7ab4db, type: 3}
+  normal: {fileID: 21300000, guid: 4c46dbf90f4af5049839d5587ae9e2c6, type: 3}
 --- !u!1 &8979231286882751694
 GameObject:
   m_ObjectHideFlags: 0

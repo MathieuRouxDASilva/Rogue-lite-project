@@ -6,6 +6,11 @@ using UnityEngine.UI;
 
 public class PlayerData : MonoBehaviour
 {
+    //Serializefield
+    [SerializeField] private SpriteRenderer spriteRenderer;
+    [SerializeField] private Sprite invincible;
+    [SerializeField] private Sprite normal;
+    
     //private
     private int _hp;
     private bool _canNotBeHit = false;
@@ -29,11 +34,6 @@ public class PlayerData : MonoBehaviour
     private void Update()
     {
         HpManager();
-
-        if (_canNotBeHit)
-        {
-            _invicibilityTimer += Time.deltaTime;
-        }
 
         Timer();
     }
@@ -133,6 +133,7 @@ public class PlayerData : MonoBehaviour
             if (_nbOfCoin >= 50)
             {
                 gotUpgraded = true;
+                IncreaseCoinNumber(-50);
                 Destroy(other.gameObject);
             }
         }
@@ -141,6 +142,7 @@ public class PlayerData : MonoBehaviour
             if (_nbOfCoin >= 10)
             {
                 IncreaseHpNumber(1);
+                IncreaseCoinNumber(-10);
                 Destroy(other.gameObject);
             }
         }
@@ -198,10 +200,16 @@ public class PlayerData : MonoBehaviour
     //timer for the 2 secs
     private void Timer()
     {
+        if (_canNotBeHit)
+        {
+            _invicibilityTimer += Time.deltaTime;
+            spriteRenderer.sprite = invincible;
+        }
         if (_invicibilityTimer >= 2)
         {
             _canNotBeHit = false;
             _invicibilityTimer = 0;
+            spriteRenderer.sprite = normal;
         }
     }
 

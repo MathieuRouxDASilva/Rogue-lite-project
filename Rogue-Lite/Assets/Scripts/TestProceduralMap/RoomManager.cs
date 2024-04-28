@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Net;
 using Unity.Mathematics;
 using UnityEngine;
 using Random = UnityEngine.Random;
@@ -316,7 +317,7 @@ public class RoomManager : MonoBehaviour
         var numberOfTheRoom = Random.Range(0, 4);
 
         //big if cause to setup shop and adjacent rooms
-        if (_numberOfIteration >= 2)
+        if (_numberOfIteration == 2)
         {
             if (!_isShopSpawned)
             {
@@ -331,45 +332,8 @@ public class RoomManager : MonoBehaviour
 
                 TryGenerateShop(new Vector2Int(roomIndex.x, roomIndex.y + 1));
             }
-
-            if (!_isShopSpawned)
-            {
-                _roomQueue.Enqueue(roomIndex);
-                _roomGrid[roomIndex.x, roomIndex.y] = 1;
-                _roomCount++;
-                var newRoom = Instantiate(roomFirstVersion, GetPositionFromGridIndex(roomIndex), quaternion.identity);
-                newRoom.GetComponent<Room>().roomIndex = roomIndex;
-                newRoom.name = $"Room-{_roomCount}";
-                _roomsObjects.Add(newRoom);
-                OpenDoors(newRoom, roomIndex.x, roomIndex.y);
-                TryGenerateShop(new Vector2Int(roomIndex.x, roomIndex.y - 1));
-            }
-
-            if (!_isShopSpawned)
-            {
-                _roomQueue.Enqueue(roomIndex);
-                _roomGrid[roomIndex.x, roomIndex.y] = 1;
-                _roomCount++;
-                var newRoom = Instantiate(roomFirstVersion, GetPositionFromGridIndex(roomIndex), quaternion.identity);
-                newRoom.GetComponent<Room>().roomIndex = roomIndex;
-                newRoom.name = $"Room-{_roomCount}";
-                _roomsObjects.Add(newRoom);
-                OpenDoors(newRoom, roomIndex.x, roomIndex.y);
-                TryGenerateShop(new Vector2Int(roomIndex.x + 1, roomIndex.y));
-            }
-
-            if (!_isShopSpawned)
-            {
-                _roomQueue.Enqueue(roomIndex);
-                _roomGrid[roomIndex.x, roomIndex.y] = 1;
-                _roomCount++;
-                var newRoom = Instantiate(roomFirstVersion, GetPositionFromGridIndex(roomIndex), quaternion.identity);
-                newRoom.GetComponent<Room>().roomIndex = roomIndex;
-                newRoom.name = $"Room-{_roomCount}";
-                _roomsObjects.Add(newRoom);
-                OpenDoors(newRoom, roomIndex.x, roomIndex.y);
-                TryGenerateShop(new Vector2Int(roomIndex.x - 1, roomIndex.y + 1));
-            }
+            _numberOfIteration++;
+            return;
         }
 
         //setup other rooms
@@ -407,7 +371,7 @@ public class RoomManager : MonoBehaviour
                 OpenDoors(newRoomFourth, roomIndex.x, roomIndex.y);
                 break;
         }
-
         _numberOfIteration++;
+        
     }
 }

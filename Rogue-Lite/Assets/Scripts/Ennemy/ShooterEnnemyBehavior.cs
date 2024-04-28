@@ -1,25 +1,30 @@
 using UnityEngine;
+using UnityEngine.Serialization;
 
 
 public class ShooterEnnemyBehavior : MonoBehaviour
 {
     //SerializeField
-    [SerializeField] private GameObject player;
     [SerializeField] private float fireRate;
-    [SerializeField] private GameObject bullet;
-    [SerializeField] private Transform barrelPosition;
     [SerializeField] private float ennemyBulletVelocity;
     [SerializeField] private int bulletPerShot;
+    [SerializeField] private GameObject player;
+    [SerializeField] private GameObject bullet;
+    [SerializeField] private Transform barrelPosition;
     [SerializeField] private Rigidbody2D rb;
-    [SerializeField] private SpriteRenderer sprite;
     [SerializeField] private LootManager loot; 
+    [SerializeField] private SpriteRenderer spritendereRenderer;
+    [SerializeField] private Sprite hit;
+    [SerializeField] private Sprite normal;
 
     //private
     private float _fireRateTimer;
     private float _timer;
+    private float _hitTimer;
     private int _hp = 2;
+    private bool _rotated;
+    private bool _isHit;
     private Vector2 _aimPosition;
-    private bool _rotated = false;
 
     private void Start()
     {
@@ -43,8 +48,9 @@ public class ShooterEnnemyBehavior : MonoBehaviour
             Destroy(this.gameObject);
         }
         
-        
         Aiming();
+        
+        ChangeSprite();
     }
 
 
@@ -80,7 +86,24 @@ public class ShooterEnnemyBehavior : MonoBehaviour
         if (other.gameObject.CompareTag("RegularBullet"))
         {
             _hp--;
+            _isHit = true;
             Destroy(other.gameObject);
+        }
+    }
+
+    private void ChangeSprite()
+    {
+        if (_isHit)
+        {
+            _hitTimer += Time.deltaTime;
+            spritendereRenderer.sprite = hit;
+        }
+
+        if (_hitTimer >= 0.2f)
+        {
+            _hitTimer = 0;
+            _isHit = false;
+            spritendereRenderer.sprite = normal;
         }
     }
     
@@ -90,7 +113,7 @@ public class ShooterEnnemyBehavior : MonoBehaviour
         
         if (!_rotated)
         {
-            sprite.flipX = true;
+            spritendereRenderer.flipX = true;
             _rotated = true;
         }
         
