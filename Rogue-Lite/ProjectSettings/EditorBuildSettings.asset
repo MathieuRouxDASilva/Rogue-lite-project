@@ -5,5 +5,17 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/TopDownGunPack/Scenes/Demo Scene.unity
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Scenes/Menu.unity
+    guid: 7383e3d16db1c5d4c838c4d8828a46f4
+  - enabled: 1
+    path: Assets/Scenes/ProceduralMap.unity
+    guid: a69b9e96663073b45bcf754e83541925
+  - enabled: 1
+    path: Assets/Scenes/Settings.unity
+    guid: 15f0d5fdc17f00c44bae18624dfbcb16
+  m_configObjects: {}
+  m_UseUCBPForAssetBundles: 0
