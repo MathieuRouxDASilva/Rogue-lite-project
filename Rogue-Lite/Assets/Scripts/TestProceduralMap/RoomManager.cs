@@ -22,7 +22,6 @@ public class RoomManager : MonoBehaviour
     [SerializeField] private int gridSizeX = 10;
     [SerializeField] private int gridSizeY = 10;
 
-    [SerializeField] private PlayerData data;
 
     //private int
     private int _roomWith = 20;
@@ -34,6 +33,11 @@ public class RoomManager : MonoBehaviour
     private Queue<Vector2Int> _roomQueue = new Queue<Vector2Int>();
     private bool _generationComplete = false;
     private bool _isShopSpawned = false;
+
+    private bool _isShopUp;
+    private bool _isShopDown;
+    private bool _isShopRight;
+
 
     private void Start()
     {
@@ -177,7 +181,7 @@ public class RoomManager : MonoBehaviour
     }
 
 
-    private void OpenDoors(GameObject room, int x, int y)
+    public void OpenDoors(GameObject room, int x, int y)
     {
         //get the room
         Room newRoomScript = room.GetComponent<Room>();
@@ -194,6 +198,42 @@ public class RoomManager : MonoBehaviour
             newRoomScript.ActivateDoor(Vector2Int.left);
             leftRoomScript.ActivateDoor(Vector2Int.right);
         }
+
+        //if there is a room to the right -> activate a door beetween them
+        if (x < gridSizeX - 1 && _roomGrid[x + 1, y] != 0)
+        {
+            newRoomScript.ActivateDoor(Vector2Int.right);
+            rightRoomScript.ActivateDoor(Vector2Int.left);
+        }
+
+        //if there is a room below -> activate a door beetween them
+        if (y > 0 && _roomGrid[x, y - 1] != 0)
+        {
+            newRoomScript.ActivateDoor(Vector2Int.down);
+            downRoomScript.ActivateDoor(Vector2Int.up);
+        }
+
+        //if there is a room up -> activate a door beetween them
+        if (y < gridSizeY - 1 && _roomGrid[x, y + 1] != 0)
+        {
+            newRoomScript.ActivateDoor(Vector2Int.up);
+            upRoomScript.ActivateDoor(Vector2Int.down);
+        }
+    }
+
+    public void CloseDoors(GameObject room, int x, int y)
+    {
+        //get the room
+        Room newRoomScript = room.GetComponent<Room>();
+
+        //it's Neighbours
+        Room leftRoomScript = GetRoomScript(new Vector2Int(x - 1, y));
+        Room rightRoomScript = GetRoomScript(new Vector2Int(x + 1, y));
+        Room upRoomScript = GetRoomScript(new Vector2Int(x, y + 1));
+        Room downRoomScript = GetRoomScript(new Vector2Int(x, y - 1));
+
+        newRoomScript.ActivateDoor(Vector2Int.left);
+        leftRoomScript.ActivateDoor(Vector2Int.right);
 
         //if there is a room to the right -> activate a door beetween them
         if (x < gridSizeX - 1 && _roomGrid[x + 1, y] != 0)
@@ -285,6 +325,22 @@ public class RoomManager : MonoBehaviour
         return new Vector3(_roomWith * (grid_x - gridSizeX / 2), _roomHeight * (grid_y - gridSizeY / 2));
     }
 
+    public int GetIndexXFromPosition(Vector3 position)
+    {
+        int positionX;
+        positionX = (int)(position.x + (_roomWith * gridSizeX) / 2) / _roomWith;
+        //return vector with position from grid
+        return positionX;
+    }
+
+    public int GetIndexYFromPosition(Vector3 position)
+    {
+        int positionY;
+        positionY = (int)(position.y + (_roomHeight * gridSizeY) / 2) / _roomHeight;
+        //return vector with position from grid
+        return positionY;
+    }
+
     //show grid on scene
     private void OnDrawGizmos()
     {
@@ -330,8 +386,34 @@ public class RoomManager : MonoBehaviour
                 _roomsObjects.Add(newRoom);
                 OpenDoors(newRoom, roomIndex.x, roomIndex.y);
 
-                TryGenerateShop(new Vector2Int(roomIndex.x, roomIndex.y + 1));
+                if (TryGenerateShop(new Vector2Int(roomIndex.x, roomIndex.y + 1)))
+                {
+                    _isShopUp = true;
+                    Debug.Log("upshop");
+                }
+                else if (!_isShopUp)
+                {
+                    if (TryGenerateShop(new Vector2Int(roomIndex.x, roomIndex.y - 1)))
+                    {
+                        _isShopDown = true;
+                        Debug.Log("downshop");
+                    }
+                }
+                else if (!_isShopDown)
+                {
+                    if (TryGenerateShop(new Vector2Int(roomIndex.x+1, roomIndex.y)))
+                    {
+                        _isShopRight = true;
+                        Debug.Log("rightshop");
+                    }
+                }
+                else if (!_isShopRight)
+                {
+                    TryGenerateShop(new Vector2Int(roomIndex.x - 1, roomIndex.y));
+                    Debug.Log("leftshop");
+                }
             }
+
             _numberOfIteration++;
             return;
         }
@@ -371,7 +453,7 @@ public class RoomManager : MonoBehaviour
                 OpenDoors(newRoomFourth, roomIndex.x, roomIndex.y);
                 break;
         }
+
         _numberOfIteration++;
-        
     }
 }

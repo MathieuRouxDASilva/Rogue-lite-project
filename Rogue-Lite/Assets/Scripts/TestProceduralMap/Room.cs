@@ -31,4 +31,12 @@ public class Room : MonoBehaviour
             leftDoor.SetActive(true);
         }
     }
+
+    public void DeactivateDoors()
+    {
+        topDoor.SetActive(false);
+        downDoor.SetActive(false);
+        rightDoor.SetActive(false);
+        leftDoor.SetActive(false);
+    }
 }

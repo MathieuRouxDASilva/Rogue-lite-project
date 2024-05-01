@@ -2,6 +2,7 @@ using System;
 using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class PlayerData : MonoBehaviour
@@ -17,6 +18,7 @@ public class PlayerData : MonoBehaviour
     private float _invicibilityTimer = 0;
     private int _nbOfCoin = 0;
     private int _maxHp = 10;
+    public int _nbOfEnnemyKilled = 0;
 
     //public
     public Text text;
@@ -34,7 +36,7 @@ public class PlayerData : MonoBehaviour
     private void Update()
     {
         HpManager();
-
+        CoinManager();
         Timer();
     }
 
@@ -113,11 +115,13 @@ public class PlayerData : MonoBehaviour
         else if (other.gameObject.CompareTag("Coin"))
         {
             IncreaseCoinNumber(1);
+            _nbOfEnnemyKilled++;
             Destroy(other.gameObject);
         }
         else if (other.gameObject.CompareTag("CoinValueOf5"))
         {
             IncreaseCoinNumber(5);
+            _nbOfEnnemyKilled++;
             Destroy(other.gameObject);
         }
         else if (other.gameObject.CompareTag("Hp"))
@@ -127,6 +131,7 @@ public class PlayerData : MonoBehaviour
                 IncreaseHpNumber(1);
                 Destroy(other.gameObject);
             }
+            _nbOfEnnemyKilled++;
         }
         else if (other.gameObject.CompareTag("BulletUpgrade"))
         {
@@ -182,8 +187,18 @@ public class PlayerData : MonoBehaviour
         
         if (_hp <= 0)
         {
-            Time.timeScale = 0;
             Debug.Log("player dead");
+            //load losing scene
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex +3);
+        }
+    }
+
+    private void CoinManager()
+    {
+        if (_nbOfCoin >= 60)
+        {
+            //load win scene
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2);
         }
     }
 

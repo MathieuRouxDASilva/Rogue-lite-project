@@ -173,7 +173,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2672762829902301424}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Density: 1
   m_Material: {fileID: 0}
@@ -219,12 +219,11 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2672762829902301424}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 90676f79ff766aa4786da4080760d435, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ennemies: {fileID: 7653578659761478913}
 --- !u!1 &2809128218180569665
 GameObject:
   m_ObjectHideFlags: 0
@@ -425,7 +424,7 @@ GameObject:
   - component: {fileID: 902930610952284877}
   m_Layer: 0
   m_Name: Left
-  m_TagString: Untagged
+  m_TagString: doors
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -573,7 +572,7 @@ GameObject:
   - component: {fileID: 5254341656399405436}
   m_Layer: 0
   m_Name: Up
-  m_TagString: Untagged
+  m_TagString: doors
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -756,7 +755,7 @@ GameObject:
   - component: {fileID: 5045126427301751322}
   m_Layer: 0
   m_Name: Down
-  m_TagString: Untagged
+  m_TagString: doors
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -904,7 +903,7 @@ GameObject:
   - component: {fileID: 1681224255335460707}
   m_Layer: 0
   m_Name: Right
-  m_TagString: Untagged
+  m_TagString: doors
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

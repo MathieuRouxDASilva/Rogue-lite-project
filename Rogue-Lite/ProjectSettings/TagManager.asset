@@ -22,6 +22,8 @@ TagManager:
   - Hp
   - BulletUpgrade
   - HpShop
+  - Room
+  - doors
   layers:
   - Default
   - TransparentFX
