@@ -486,7 +486,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 647653458}
-  - component: {fileID: 647653457}
+  - component: {fileID: 647653459}
   m_Layer: 0
   m_Name: ManagerKillCount
   m_TagString: Untagged
@@ -494,18 +494,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &647653457
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 647653456}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e1a923050b30a714b8b1196245b3851e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &647653458
 Transform:
   m_ObjectHideFlags: 0
@@ -521,6 +509,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &647653459
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 647653456}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1a923050b30a714b8b1196245b3851e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &791873392 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3981705009607797689, guid: 8449eecf97d183845886b30fe1f8cf86,
@@ -811,14 +811,12 @@ MonoBehaviour:
     type: 3}
   roomFourthVersion: {fileID: 3370898917042651285, guid: db8216075381e754b859df0e9f35b54e,
     type: 3}
-  eliteRoom: {fileID: 3370898917042651285, guid: 939ed6ec9c20bd849ae04cff4ba5cdd3,
-    type: 3}
   spawnRoom: {fileID: 3370898917042651285, guid: 837734fa799b6874889ee8b5851a8a6e,
     type: 3}
   lootRoom: {fileID: 3370898917042651285, guid: 55de4439ee2690347b4764d9d37060ce,
     type: 3}
-  maxRoomsCount: 30
-  minRoomsCount: 20
+  maxRoomsCount: 20
+  minRoomsCount: 19
   gridSizeX: 50
   gridSizeY: 50
 --- !u!4 &1515793250

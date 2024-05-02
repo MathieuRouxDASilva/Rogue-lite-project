@@ -85,9 +85,27 @@ public class ShooterEnnemyBehavior : MonoBehaviour
     {
         if (other.gameObject.CompareTag("RegularBullet"))
         {
+            Destroy(other.gameObject);
+            rb.velocity = new Vector2(0, 0);
             _hp--;
             _isHit = true;
+        }
+        if (other.gameObject.CompareTag("player"))
+        {
+            rb.velocity = new Vector2(0, 0);
+        }
+        if (other.gameObject.CompareTag("ChaserEnnemy"))
+        {
+            rb.velocity = new Vector2(0, 0);
+        }
+        if (other.gameObject.CompareTag("PatternEnnemy"))
+        {
+            rb.velocity = new Vector2(0, 0);
+        }
+        if (other.gameObject.CompareTag("EnnemyBullet"))
+        {
             Destroy(other.gameObject);
+            rb.velocity = new Vector2(0, 0);
         }
     }
 

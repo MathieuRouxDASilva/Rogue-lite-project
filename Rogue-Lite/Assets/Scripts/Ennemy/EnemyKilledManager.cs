@@ -18,18 +18,9 @@ public class EnemyKilledManager : MonoBehaviour
 
     private void Count()
     {
-        foreach (var enemy in _listOfChasers)
-        {
-            if (enemy == null)
-            {
-                _listOfChasers.Remove(enemy.gameObject);
-            }
-        }
-        
-        
         var count = _listOfChasers.Count + _listOfLasers.Count + _listOfPatterns.Count + _listOfShooters.Count;
 
-        
+        ChangeLengthList();
         
         if (count == 0)
         {
@@ -39,6 +30,38 @@ public class EnemyKilledManager : MonoBehaviour
         }
     }
 
+    private void ChangeLengthList()
+    {
+        foreach (var enemy in _listOfChasers)
+        {
+            if (enemy == null)
+            {
+                _listOfChasers.Remove(enemy.gameObject);
+            }
+        }
+        foreach (var enemy in _listOfShooters)
+        {
+            if (enemy == null)
+            {
+                _listOfShooters.Remove(enemy.gameObject);
+            }
+        }
+        foreach (var enemy in _listOfLasers)
+        {
+            if (enemy == null)
+            {
+                _listOfLasers.Remove(enemy.gameObject);
+            }
+        }
+        foreach (var enemy in _listOfPatterns)
+        {
+            if (enemy == null)
+            {
+                _listOfPatterns.Remove(enemy.gameObject);
+            }
+        }
+    }
+    
     private void LateUpdate()
     {
         if (_timer >= 2f)
@@ -56,6 +79,10 @@ public class EnemyKilledManager : MonoBehaviour
             Count();   
         }
 
-        _timer += Time.deltaTime;
+        if (_timer <= 3f)
+        {
+            _timer += Time.deltaTime;
+        }
+        
     }
 }

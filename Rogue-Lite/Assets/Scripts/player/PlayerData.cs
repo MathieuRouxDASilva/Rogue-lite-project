@@ -13,12 +13,12 @@ public class PlayerData : MonoBehaviour
     [SerializeField] private Sprite normal;
     
     //private
-    private int _hp;
-    private bool _canNotBeHit = false;
-    private float _invicibilityTimer = 0;
     private int _nbOfCoin = 0;
+    private int _hp;
     private int _maxHp = 10;
-    public int _nbOfEnnemyKilled = 0;
+    private int _nbOfEnnemyKilled = 0;
+    private float _invicibilityTimer = 0;
+    private bool _canNotBeHit = false;
 
     //public
     public Text text;

@@ -13,7 +13,6 @@ public class RoomManager : MonoBehaviour
     [SerializeField] private GameObject roomSecoundVersion;
     [SerializeField] private GameObject roomThirdVersion;
     [SerializeField] private GameObject roomFourthVersion;
-    [SerializeField] private GameObject eliteRoom;
     [SerializeField] private GameObject spawnRoom;
     [SerializeField] private GameObject lootRoom;
 

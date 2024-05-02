@@ -60,6 +60,10 @@ public class BulletManager : MonoBehaviour
         return false;
     }
 
+    //angle = Mathf.Atan2(_lookDirection.y, _lookDirection.x) * Mathf.Rad2Deg;
+
+//Instantiate(_arrow, transform.position, Quaternion.AngleAxis(angle, Vector3.forward));
+    
     private void Fire()
     {
         _fireRateTimer = 0;
@@ -69,18 +73,18 @@ public class BulletManager : MonoBehaviour
         {
             if (playerData.gotUpgraded)
             {
+                var angle = Mathf.Atan2(barrelPosition.position.y, barrelPosition.position.x) * Mathf.Rad2Deg;
                 GameObject actualUpgradeBullet = Instantiate(bullet, barrelPosition.position,
-                    new Quaternion(barrelPosition.rotation.x, barrelPosition.rotation.y -180, barrelPosition.rotation.z,
-                        barrelPosition.rotation.w));
+                    Quaternion.AngleAxis(angle, Vector3.forward));
                 actualUpgradeBullet.transform.localScale *= 2;
                 Rigidbody2D rb = actualUpgradeBullet.GetComponent<Rigidbody2D>();
                 rb.AddForce(barrelPosition.forward * (bulletVelocity * 5), ForceMode2D.Impulse);
             }
             else
             {
+                var angle = Mathf.Atan2(barrelPosition.position.y, barrelPosition.position.x) * Mathf.Rad2Deg;
                 GameObject actualBullet = Instantiate(bullet, barrelPosition.position,
-                                new Quaternion(barrelPosition.rotation.x, barrelPosition.rotation.y -180, barrelPosition.rotation.z,
-                                    barrelPosition.rotation.w));
+                    Quaternion.AngleAxis(angle, Vector3.forward));
                 Rigidbody2D rbe = actualBullet.GetComponent<Rigidbody2D>();
                 rbe.AddForce(barrelPosition.forward * (bulletVelocity * 5), ForceMode2D.Impulse);
             }

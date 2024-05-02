@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -15,6 +16,7 @@ public class InputManager : MonoBehaviour
     private Vector2 _playerMoveInput;
     private const float MoveSpeed = 25f;
     private bool _isShooting = false;
+    private Rigidbody2D _rb;
 
     //get is shooting
     public bool IsShooting => _isShooting;
@@ -38,11 +40,17 @@ public class InputManager : MonoBehaviour
         }
     }
 
+    private void Start()
+    {
+        _rb = GetComponent<Rigidbody2D>();
+    }
+
     //update
     private void Update()
     {
         Move();
         Aiming();
+        _rb.velocity = Vector2.zero;
     }
 
     //move function
