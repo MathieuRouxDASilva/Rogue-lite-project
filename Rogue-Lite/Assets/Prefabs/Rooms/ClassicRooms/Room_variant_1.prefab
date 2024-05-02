@@ -392,7 +392,6 @@ Transform:
   m_Children:
   - {fileID: 8318645191574620279}
   - {fileID: 2950362679853417941}
-  - {fileID: 6618516320655330522}
   - {fileID: 5564050763717870927}
   - {fileID: 1731495217233227339}
   m_Father: {fileID: 0}
@@ -562,37 +561,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   newCamPos: {x: -20, y: 0, z: 0}
   newPlayerPos: {x: -6, y: 0, z: 0}
---- !u!1 &3422260456513045086
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 6618516320655330522}
-  m_Layer: 0
-  m_Name: Ennemies
-  m_TagString: EnnemyGroups
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &6618516320655330522
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3422260456513045086}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 3017427331853330157}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  isManuallyOpened: 0
 --- !u!1 &5042507509163751517
 GameObject:
   m_ObjectHideFlags: 0
@@ -622,7 +591,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 6.37, z: -0.1}
-  m_LocalScale: {x: 3, y: 1.8689998, z: 1}
+  m_LocalScale: {x: 3.2547002, y: 2.027678, z: 1.0849}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2950362679853417941}
@@ -715,7 +684,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: 0.026010513}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -725,7 +694,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.9120327, y: 0.947979}
   m_EdgeRadius: 0
 --- !u!114 &5254341656399405436
 MonoBehaviour:
@@ -741,6 +710,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   newCamPos: {x: 0, y: 18, z: 0}
   newPlayerPos: {x: 0, y: 10, z: 0}
+  isManuallyOpened: 0
 --- !u!1 &5390309003828469662
 GameObject:
   m_ObjectHideFlags: 0
@@ -924,6 +894,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   newCamPos: {x: 0, y: -18, z: 0}
   newPlayerPos: {x: 0, y: -10, z: 0}
+  isManuallyOpened: 0
 --- !u!1 &6348064150133147774
 GameObject:
   m_ObjectHideFlags: 0
@@ -1072,6 +1043,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   newCamPos: {x: 20, y: 0, z: 0}
   newPlayerPos: {x: 6, y: 0, z: 0}
+  isManuallyOpened: 0
 --- !u!1 &7284278874333298138
 GameObject:
   m_ObjectHideFlags: 0

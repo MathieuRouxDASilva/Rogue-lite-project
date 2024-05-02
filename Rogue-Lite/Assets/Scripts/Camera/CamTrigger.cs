@@ -11,6 +11,9 @@ public class CamTrigger : MonoBehaviour
     //private
     private CamController _camControl;
     
+    //public
+    public bool isManuallyOpened = false;
+    
     // Start is called before the first frame update
     void Start()
     {

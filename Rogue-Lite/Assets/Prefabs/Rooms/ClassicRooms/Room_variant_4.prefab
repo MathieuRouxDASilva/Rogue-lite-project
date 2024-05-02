@@ -299,7 +299,6 @@ Transform:
   - {fileID: 2484569060629634284}
   - {fileID: 8318645191574620279}
   - {fileID: 2950362679853417941}
-  - {fileID: 8361133332708683410}
   - {fileID: 5725978448120305946}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -468,6 +467,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   newCamPos: {x: -20, y: 0, z: 0}
   newPlayerPos: {x: -6, y: 0, z: 0}
+  isManuallyOpened: 0
 --- !u!1 &5042507509163751517
 GameObject:
   m_ObjectHideFlags: 0
@@ -616,6 +616,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   newCamPos: {x: 0, y: 18, z: 0}
   newPlayerPos: {x: 0, y: 10, z: 0}
+  isManuallyOpened: 0
 --- !u!1 &5390309003828469662
 GameObject:
   m_ObjectHideFlags: 0
@@ -799,6 +800,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   newCamPos: {x: 0, y: -18, z: 0}
   newPlayerPos: {x: 0, y: -10, z: 0}
+  isManuallyOpened: 0
 --- !u!1 &6348064150133147774
 GameObject:
   m_ObjectHideFlags: 0
@@ -947,40 +949,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   newCamPos: {x: 20, y: 0, z: 0}
   newPlayerPos: {x: 6, y: 0, z: 0}
---- !u!1 &6805207737478433100
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 8361133332708683410}
-  m_Layer: 0
-  m_Name: Ennemies
-  m_TagString: EnnemyGroups
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &8361133332708683410
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6805207737478433100}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 6087701355382011355}
-  - {fileID: 3739467843610255977}
-  - {fileID: 4471947890030357634}
-  m_Father: {fileID: 3017427331853330157}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  isManuallyOpened: 0
 --- !u!1 &7284278874333298138
 GameObject:
   m_ObjectHideFlags: 0
@@ -1179,7 +1148,10 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 6087701355382011355}
+  - {fileID: 3739467843610255977}
+  - {fileID: 4471947890030357634}
   m_Father: {fileID: 3017427331853330157}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &599011286492609014
@@ -1189,7 +1161,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9199768270300219762}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
   m_Material: {fileID: 0}
@@ -1235,12 +1207,11 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9199768270300219762}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 90676f79ff766aa4786da4080760d435, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ennemies: {fileID: 6805207737478433100}
 --- !u!1 &9205727491929147244
 GameObject:
   m_ObjectHideFlags: 0
@@ -1380,12 +1351,12 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 8361133332708683410}
+    m_TransformParent: {fileID: 2484569060629634284}
     m_Modifications:
     - target: {fileID: 343595644397070622, guid: d31303b348937e24b9ca986c2478e69c,
         type: 3}
       propertyPath: m_Name
-      value: ShooterEnnemy
+      value: Ennemy3
       objectReference: {fileID: 0}
     - target: {fileID: 530886429827306640, guid: d31303b348937e24b9ca986c2478e69c,
         type: 3}
@@ -1568,7 +1539,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 8361133332708683410}
+    m_TransformParent: {fileID: 2484569060629634284}
     m_Modifications:
     - target: {fileID: 791339845368133858, guid: 050d74e9bccc20244924698e9146d13d,
         type: 3}
@@ -1578,7 +1549,7 @@ PrefabInstance:
     - target: {fileID: 1915667660670484530, guid: 050d74e9bccc20244924698e9146d13d,
         type: 3}
       propertyPath: m_Name
-      value: StatueThatShootLaserEnnemy
+      value: Ennemy1
       objectReference: {fileID: 0}
     - target: {fileID: 5654892502329507039, guid: 050d74e9bccc20244924698e9146d13d,
         type: 3}
@@ -1657,7 +1628,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 8361133332708683410}
+    m_TransformParent: {fileID: 2484569060629634284}
     m_Modifications:
     - target: {fileID: 791339845368133858, guid: 050d74e9bccc20244924698e9146d13d,
         type: 3}
@@ -1667,7 +1638,7 @@ PrefabInstance:
     - target: {fileID: 1915667660670484530, guid: 050d74e9bccc20244924698e9146d13d,
         type: 3}
       propertyPath: m_Name
-      value: StatueThatShootLaserEnnemy (1)
+      value: Ennemy2
       objectReference: {fileID: 0}
     - target: {fileID: 5654892502329507039, guid: 050d74e9bccc20244924698e9146d13d,
         type: 3}
