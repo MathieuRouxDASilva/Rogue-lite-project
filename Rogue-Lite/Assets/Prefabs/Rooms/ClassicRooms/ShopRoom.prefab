@@ -466,6 +466,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   newCamPos: {x: -20, y: 0, z: 0}
   newPlayerPos: {x: -6, y: 0, z: 0}
+  isManuallyOpened: 0
 --- !u!1 &5042507509163751517
 GameObject:
   m_ObjectHideFlags: 0
@@ -614,6 +615,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   newCamPos: {x: 0, y: 18, z: 0}
   newPlayerPos: {x: 0, y: 10, z: 0}
+  isManuallyOpened: 0
 --- !u!1 &5282960724588160957
 GameObject:
   m_ObjectHideFlags: 0
@@ -917,6 +919,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   newCamPos: {x: 0, y: -18, z: 0}
   newPlayerPos: {x: 0, y: -10, z: 0}
+  isManuallyOpened: 0
 --- !u!1 &6348064150133147774
 GameObject:
   m_ObjectHideFlags: 0
@@ -1065,6 +1068,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   newCamPos: {x: 20, y: 0, z: 0}
   newPlayerPos: {x: 6, y: 0, z: 0}
+  isManuallyOpened: 0
 --- !u!1 &7284278874333298138
 GameObject:
   m_ObjectHideFlags: 0
@@ -1407,6 +1411,23 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 5624458395589962370}
     m_Modifications:
+    - target: {fileID: 9502587914680103, guid: 9f435e40251e4984da629733aba548bd, type: 3}
+      propertyPath: m_Size.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9502587914680103, guid: 9f435e40251e4984da629733aba548bd, type: 3}
+      propertyPath: m_Size.y
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 9502587914680103, guid: 9f435e40251e4984da629733aba548bd, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: ecf532c8393ab9c4a84bb4155fe95687,
+        type: 3}
+    - target: {fileID: 9502587914680103, guid: 9f435e40251e4984da629733aba548bd, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 84459714002510070, guid: 9f435e40251e4984da629733aba548bd,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1456,6 +1477,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 5062011594199349441, guid: 9f435e40251e4984da629733aba548bd,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5062011594199349441, guid: 9f435e40251e4984da629733aba548bd,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.y
+      value: 0.6
       objectReference: {fileID: 0}
     - target: {fileID: 7624671184010447403, guid: 9f435e40251e4984da629733aba548bd,
         type: 3}
