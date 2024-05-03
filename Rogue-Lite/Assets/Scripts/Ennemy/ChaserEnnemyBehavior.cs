@@ -52,7 +52,9 @@ public class ChaserEnnemyBehavior : MonoBehaviour
         Vector3 playerPosition = player.transform.position;
         Vector3 path = playerPosition - transform.position;
         
-        transform.Translate(path * (speed * Time.deltaTime), Space.World);
+        
+        transform.Translate(path * Time.deltaTime, Space.World);
+        
     }
 
     private void OnCollisionEnter2D(Collision2D other)
@@ -68,6 +70,7 @@ public class ChaserEnnemyBehavior : MonoBehaviour
 
     private void ChangeSprite()
     {
+        //spriteRenderer.sprite = asleep;
         if (detector.isSeeing)
         {
             spriteRenderer.sprite = awaken;
@@ -79,11 +82,11 @@ public class ChaserEnnemyBehavior : MonoBehaviour
             _timer += Time.deltaTime;
         }
 
-        if (_timer >= 0.2f)
+        if (_timer >= 0.02f)
         {
-            spriteRenderer.sprite = asleep;
-            _timer = 0;
             _isHit = false;
+            spriteRenderer.sprite = awaken;
+            _timer = 0;
         }
     }
     

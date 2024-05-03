@@ -13,6 +13,7 @@ public class CamTrigger : MonoBehaviour
     
     //public
     public bool isManuallyOpened = false;
+    public bool areDoorsOpened = false;
     
     // Start is called before the first frame update
     void Start()

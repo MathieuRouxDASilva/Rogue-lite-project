@@ -10,7 +10,7 @@ public class InputManager : MonoBehaviour
 
     //aim and position of mouse
     [Header("Aiming")] [SerializeField] private Vector2 mousePos;
-    [SerializeField] private new Camera camera;
+    [SerializeField] private Camera camera;
     
     //private variable
     private Vector2 _playerMoveInput;
